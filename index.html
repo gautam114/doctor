@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!---magnific popup-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        html{
+            scroll-behavior:smooth;
+        }
+         #ul a:hover{
+          color:lightsteelblue;  
+        }
+        #ul a{
+            text-decoration: none;
+            color:black;
+            font-weight: bold;
+        }
+        #home{
+            height:80vh;
+        }
+        #facilities img:hover{
+            transform: scale(1.2);
+            transition:all 1.5s;
+        }
+
+        #facilities .col-4{
+            overflow: hidden;
+        }
+        #review_div{
+            width:80%;
+            
+        }
+        #views span{
+            color:lightskyblue;
+        }
+    #review{
+background:rgba(0,0,0,0.5) url('dr/hos.jpg');
+    background-size:cover;
+    background-blend-mode: darken;
+    }
+        @media(max-width:400px){
+        #facilities img{
+                 height:150;
+                 width:100%;
+        }
+        #review_div{
+            width:100%;
+            
+        }
+    }
+    @media(orientation:landscape){
+        #home{
+            height:auto;
+        }
+    }
+        
+        
+    </style>
+</head>
+<body onload='load()'>
+    
+<!---->
+<header>
+    <nav class='navbar navbar-expand-lg navbar-light bg-light position-fixed fixed-top'>
+        <div class='container'>
+            <h1 class='navbar-brand'><span class='text-info'>H</span>EALTH <span class='text-info'>C</span>ARE</h1>
+        <button class='navbar-toggler' data-bs-target='#colap' data-bs-toggle='collapse'><span class="navbar-toggler-icon"></span></button>
+            <div class='collapse navbar-collapse' id='colap'>
+                <ul class='navbar-nav ms-auto' id='ul'>
+                    <li class='nav-item nav-link'><a href='#home' >Home</a></li>
+                    <li class='nav-item nav-link'><a href='#about' >About</a></li>
+                    <li class='nav-item nav-link'><a href='#facilities' >Facility</a></li>
+                    <li class='nav-item nav-link'><a href='#review' >Review</a></li>
+
+                    <li class='nav-item nav-link'><a href='#contact' >Contact</a></li>
+                
+
+                </ul>
+            </div>    
+    </div>
+    </nav>
+    <div class='container d-flex align-items-center' id='home' >
+    <section class='row'>
+        <div class='col-md-6 col-12   d-flex justify-content-center align-items-center p-0'>
+            <img src='dr/Doctors.gif'  class='img-fluid'>
+        </div>
+        <div class='col-md-6 col-12  d-flex  justify-content-start align-items-center ps-2'>
+             <div>
+                <h1><span class='text-info'>Stay</span> Safe, <span class='text-info'> Stay</span> Healthy</h1>
+                <h2 class='my-3'>caring For Your Life</h2>
+                <butto class='btn btn-outline-info'>Learn more</butto>
+             </div>
+            </div>
+    </section>
+    </div>
+</header>
+
+
+<div class='container mx-auto bg-light' id='about'>
+<div class='row'>
+<div class='col-6 d-flex  justify-content-center align-items-center p-2'>
+    <div class=''>
+        <div>
+            <h3><span class='bi bi-truck text-info'> </span>Ambulance Service</h3>
+            <p>our ambulance service is totally free within 50KM but we will not come</p>
+        </div>
+        <div class='my-3'>
+            <h3><span class='bi bi-door-open text-info'> </span>Emergency facility</h3>
+            <p>our ambulance service is totally free within 50KM but we will not come 24 hrs emergency service</p>
+        </div>
+        <div>
+            <h3><span class='bi bi-file-richtext text-info'> </span>Free checkup</h3>
+            <p>Just come and take Free checkup facility advantage in our house we are here for you</p>
+        </div>
+    </div>
+</div>
+<div class='col-6 p-2 d-flex justify-content-center align-items-center'>
+    <img src='dr/dr.jpg' width='90%'>
+</div>
+</div>
+</div>
+
+<!---our facilities-->
+
+<div class='container galleries' id='facilities'>
+    <h1 class='text-center my-5 '>Our Facilities</h1>
+    <div class='row gy-2 '>
+        <div class='col-4 p-1 a'>
+            <a href='dr/dr.jpg'><img src='dr/dr.jpg' height='200' width='100%'></a>
+        </div>
+        <div class='col-4 p-1'>
+            <a href='dr/dr2.jpg'><img src='dr/dr2.jpg' height='200' width='100%'></a>
+        </div>
+        <div class='col-4 p-1'>
+        <a href='dr/dr3.jpg'> <img src='dr/dr3.jpg' height='200' width='100%'></a>   
+        </div>
+        <div class='col-4 p-1'>
+<a href='dr/dr4.webp'><img src='dr/dr4.webp' height='200' width='100%'></a>
+        </div>
+        <div class='col-4 p-1'>
+           <a href='dr/dr5.png'> <img src='dr/dr5.png' height='200' width='100%'></a>
+        </div>
+        <div class='col-4 p-1'>
+            <a href='dr/dr6.jpg'><img src='dr/dr6.jpg' height='200' width='100%'></a>
+        </div>
+        <div class='col-4 p-1'>
+           <a href='dr/dr.jpg'> <img src='dr/dr.jpg' height='200' width='100%'></a>
+        </div>
+        <div class='col-4 p-1'>
+            <a href='dr/dr4.webp'><img src='dr/dr4.webp' height='200' width='100%'></a>
+        </div>
+        <div class='col-4 p-1'>
+           <a href='dr/dr5.png' ><img src='dr/dr5.png' height='200' width='100%'></a>
+        </div>
+    </div>
+</div>
+
+<!--review-->
+
+<div class='container-fluid py-2' id='review'>
+    <h1 class='text-center'>Peoples's Review</h1>
+<div class=' mx-auto my-5 ' id='review_div'>
+  <div class='row gy-1' id='ro'>
+
+  </div>  
+</div>
+</div>
+<!--views-->
+<div class='my-5'>
+    <div class='d-flex justify-content-around align-items-center' id='views'>
+       
+    </div>
+</div>
+<!--contscts-->
+<div class='container bg-dark p-2 my-4 ' id='contact'>
+    <form id='f1'>
+        <div class='row g-2'>
+            <div class='col-md-6 col-10 mx-auto'>
+                <input type='text' placeholder="name" class='form-control'>
+            </div>
+            <div class='col-md-6 col-10 mx-auto'>
+                <input type='tel' placeholder="contact" pattern='[0-9]{10}' class='form-control'>
+            </div>
+            <div class='col-md-6 col-10 mx-auto'>
+                <input type='email' placeholder="Email" class='form-control'>
+            </div>
+            <div class='col-md-6 col-10 mx-auto'>
+                <label class='form-label text-white'>MAke an appoinment</label>
+                <input type='date' id='datte' class='form-control'>
+            </div>
+            <div class='col-md-10 mx-auto col-12'>
+                <textarea class='form-control' rows="4">
+                    message!
+                </textarea>
+            </div>
+            <div class='col-12 text-center my-2'>
+                <button class='btn btn-outline-primary'>Submit</button>
+            </div>
+            <div class='col-12 text-center'>
+                <p id='msg' class='text-success'></p>
+            </div>
+        </div>
+    </form>
+</div>
+
+<button class='btn rounded-circle bg-dark text-info position-fixed end-0 bottom-0' id='btn' style='display:none;'><span class='bi bi-arrow-up'></span></button>
+
+
+<footer class='mt-auto bg-dark text-center py-3 text-white'>
+<p>web site by <span class='text-danger bi bi-hammer'>Gautam</span></p>
+</footer>
+    <script src='dr.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!--magnific pop-up-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+ $(document).ready(function(){
+    $('.galleries').magnificPopup({
+        type:'image',
+        delegate:'a',
+        gallery:{enabled:true}
+
+    })
+
+ })
+    </script>
+
+</body>
+</html>
